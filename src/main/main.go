@@ -3,6 +3,7 @@ package main
 import (
 	// "strconv"
 	// "fmt"
+	// "encoding/json"
 	. "iota/iota"
 )
 
@@ -13,7 +14,8 @@ type Response struct {
 }
 
 func main() {
-	Store()
+	// ConvertUser()
+	// StoreJSON()
 
 	const jsonData1 = `
 	    {"Name": "Alice", "Age": 25}
@@ -21,14 +23,19 @@ func main() {
 	`
 
 	const jsonData2 = `
-			{"Name": "Charlie", "Age": 35}
-			{"Name": "Dave", "Age": 42}
+		{"Name": "Charlie", "Age": 35}
+		{"Name": "Dave", "Age": 42}
 	`
 	// initiate IOTA transaction
 	// TransferTokens()
 	// Fetch()
-	// trannsmiter := Init(jsonData1, nil)
-	// Init(jsonData2, trannsmiter)
+
+
+	PublishAndStoreState(jsonData1, false)
+
+	// PublishAndStoreState(jsonData2, true)
+
+
 
 	// var randomNumber = Random()
 	//

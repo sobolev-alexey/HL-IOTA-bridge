@@ -15,7 +15,7 @@ func Fetch() {
   	endpointURL = env.String("ENDPOINT_URL", "https://nodes.devnet.iota.org")
   	mode        = env.String("MODE", "public", env.AllowedValues("public", "private", "restricted"))
   	sideKey     = env.String("SIDE_KEY", "")
-  	root 				= env.String("ROOT", "YFJPUERTLJFE9GCDYOKVIACLDSFZV99KUDRYOQZZWNRONRJYJZMOTWSTCCKROWIQJBYSKKECRWXCKIHGZ")
+  	root 		= env.String("ROOT", "YFJPUERTLJFE9GCDYOKVIACLDSFZV99KUDRYOQZZWNRONRJYJZMOTWSTCCKROWIQJBYSKKECRWXCKIHGZ")
   )
 
   currentRoot := root.Get()
